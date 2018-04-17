@@ -27,7 +27,7 @@ stages{
             parallel{
                 stage ('Deploy to Staging'){
                     steps {
-                        sh "ec2-user@52.47.136.216 -i /home/job/Escritorio/tomcat-demo.pem"
+                        sh "ec2-user@52.47.136.216 -i /home/job/Escritorio/tomcat-demo-jenkins.pem"
                     }
                 }
             }
