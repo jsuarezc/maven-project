@@ -2,8 +2,8 @@ pipeline {
     agent any
     
     parameters { 
-         string(name: 'tomcat_dev', defaultValue: '52.47.171.4', description: 'Staging Server') //ip aws - EC2
-         //string(name: 'tomcat_dev', defaultValue: '52.47.136.216', description: 'Staging Server') //ip aws - EC2
+         //string(name: 'tomcat_dev', defaultValue: '52.47.171.4', description: 'Staging Server') //ip aws - EC2
+         string(name: 'tomcat_dev', defaultValue: '52.47.136.216', description: 'Staging Server') //ip aws - EC2
          //string(name: 'tomcat_prod', defaultValue: '34.209.233.6', description: 'Production Server') //ip aws - EC2
     } 
 
