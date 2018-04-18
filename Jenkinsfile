@@ -27,8 +27,8 @@ stages{
             parallel{
                 stage ('Deploy to Staging'){
                     steps {
-                        //sh "StrictHostKeyChecking=no scp -i /home/job/Escritorio/tomcat-demo.pem **/target/*.war ec2-user@${params.tomcat_dev}:/var/lib/tomcat8/webapps"
-                        sh "ssh ec2-user@52.47.136.216 -i /home/job/Escritorio/tomcat-demo.pem"
+                        sh "StrictHostKeyChecking=no scp -i /home/job/Escritorio/tomcat-demo.pem **/target/*.war ec2-user@${params.tomcat_dev}:/var/lib/tomcat8/webapps"
+                        //sh "ssh ec2-user@52.47.136.216 -i /home/job/Escritorio/tomcat-demo.pem"
                     }
                 }
             }
